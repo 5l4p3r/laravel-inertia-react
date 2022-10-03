@@ -1,0 +1,12 @@
+.photo {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    object-position: center;
+}
+.icon {
+    width: 35px;
+    height: 35px;
+    object-fit: cover;
+    object-position: center;
+}
