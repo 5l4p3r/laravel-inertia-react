@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\Auth\AuthController;
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\UserController;
 use Illuminate\Support\Facades\Route;
 use Inertia\Inertia;
 
@@ -26,3 +27,5 @@ Route::post('/register',[AuthController::class, 'register_post']);
 Route::post('/logout',[AuthController::class,'logout']);
 
 Route::get('/profile',[HomeController::class,'profile']);
+
+Route::post('/change_photo',[UserController::class,'change_photo']);

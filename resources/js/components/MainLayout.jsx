@@ -1,4 +1,4 @@
-import { Head, usePage } from '@inertiajs/inertia-react'
+import { Head } from '@inertiajs/inertia-react'
 import React from 'react'
 import Sidebar from '../layout/Sidebar'
 
