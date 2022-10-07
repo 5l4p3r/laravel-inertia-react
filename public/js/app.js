@@ -4583,9 +4583,7 @@ var Profile = function Profile() {
     fdata.append('file', file);
     fdata.append('oldfile', user.photo);
     _inertiajs_inertia__WEBPACK_IMPORTED_MODULE_1__.Inertia.post('/change_photo', fdata);
-    _inertiajs_inertia__WEBPACK_IMPORTED_MODULE_1__.Inertia.reload({
-      only: [user]
-    });
+    _inertiajs_inertia__WEBPACK_IMPORTED_MODULE_1__.Inertia.reload();
   };
 
   return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_components_MainLayout__WEBPACK_IMPORTED_MODULE_4__["default"], {
@@ -4983,13 +4981,13 @@ var Sidebar = function Sidebar() {
         children: data.auth.user !== null ? /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.Fragment, {
           children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("img", {
             src: "/images/".concat(data.auth.user.photo),
-            alt: "photo",
+            alt: "...",
             className: "icon"
           }), " ", data.auth.user.name]
         }) : /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.Fragment, {
           children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("img", {
             src: "/images/user.png",
-            alt: "photo",
+            alt: "...",
             className: "icon"
           }), " isWantO"]
         })
@@ -5005,7 +5003,7 @@ var Sidebar = function Sidebar() {
             className: "navbar-brand",
             children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("img", {
               src: "/images/".concat(data.auth.user.photo),
-              alt: "photo",
+              alt: "...",
               className: "icon"
             }), " ", data.auth.user.name]
           }) : /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("p", {

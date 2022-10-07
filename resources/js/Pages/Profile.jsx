@@ -16,8 +16,7 @@ const Profile = () => {
         fdata.append('file',file)
         fdata.append('oldfile',user.photo)
         Inertia.post('/change_photo',fdata)
-        
-        Inertia.reload({only:[user]})
+        Inertia.reload()
     }
     return (
         <MainLayout>

@@ -21,10 +21,10 @@ const Sidebar = () => {
                 <Button variant='default' onClick={handleShow}>
                     {data.auth.user !== null ?
                         <>
-                            <img src={`/images/${data.auth.user.photo}`} alt="photo" className="icon" /> {data.auth.user.name}
+                            <img src={`/images/${data.auth.user.photo}`} alt="..." className="icon" /> {data.auth.user.name}
                         </>
                         :
-                        <><img src={`/images/user.png`} alt="photo" className="icon" /> isWantO</>
+                        <><img src={`/images/user.png`} alt="..." className="icon" /> isWantO</>
                     }
                 </Button>                
             </div>
@@ -33,7 +33,7 @@ const Sidebar = () => {
             <Offcanvas.Title className='p-2'>
                 {data.auth.user !== null ?
                     <Link href='/profile' className='navbar-brand'>
-                        <img src={`/images/${data.auth.user.photo}`} alt="photo" className="icon" /> {data.auth.user.name}
+                        <img src={`/images/${data.auth.user.photo}`} alt="..." className="icon" /> {data.auth.user.name}
                     </Link>
                     :
                     <p>isWantO</p>

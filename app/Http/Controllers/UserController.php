@@ -6,7 +6,6 @@ use App\Models\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\File;
-use Inertia\Inertia;
 
 class UserController extends Controller
 {
@@ -27,5 +26,7 @@ class UserController extends Controller
         {
             File::delete('images'."/".$request->oldfile);
         }
+        // return redirect('/profile')->with("success","Photo changed");
+        return redirect()->back();
     }
 }
